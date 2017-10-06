@@ -1,0 +1,12 @@
+.Logo {
+   position:absolute;
+   text-align:left;
+}
+
+.Logo img {
+    margin-top: 5px;
+    margin-left: 5px;
+    height:60%;
+    width:60%;
+    
+}

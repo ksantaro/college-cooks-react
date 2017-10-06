@@ -1,0 +1,11 @@
+.Top{
+    display:block;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    background-image:url(background.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    box-shadow: 10px 10px 5px #888888;
+    
+}
