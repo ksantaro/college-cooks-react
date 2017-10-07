@@ -1,6 +1,12 @@
+@font-face {
+    font-family: 'LemonMilk';
+    src: url('LemonMilk.otf');
+}
+
 .Logo {
    position:absolute;
    text-align:left;
+   margin-left: 1%;
 }
 
 .Logo img {
@@ -9,4 +15,21 @@
     height:60%;
     width:60%;
     
+}
+
+.collegecooks {
+    color: white;
+    font-size: 300%;
+    margin-top: 1%;
+    text-shadow: 1px 1px black;
+    font-family: LemonMilk;
+    
+}
+
+.recipe {
+    color: orange;
+    text-shadow: 1px 1px black;
+    font-size: 160%;
+    margin-top: -20%;
+    font-family: LemonMilk;
 }

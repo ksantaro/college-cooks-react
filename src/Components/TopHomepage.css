@@ -1,7 +1,7 @@
 .Top{
-    display:block;
-    position: absolute;
-    height: 60%;
+    float: left;
+    position: static;
+    height: 40em;
     width: 100%;
     background-image:url(background.jpg);
     background-size:cover;
