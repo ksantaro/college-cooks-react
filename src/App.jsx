@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import meals from './static-database/meals-database';
 import ingrediants from './static-database/ingrediants-database';
-import Meal from './Components/Meal';
+import MealLayout from './Components/MealLayout';
 
 class App extends Component {
   constructor (props) {
@@ -15,18 +15,9 @@ class App extends Component {
   }
 
   render () {
-    console.log(this.state.meals);
-    const mealItems = this.state.meals.map((meal) =>
-      <Meal
-        meal={meal}
-      />
-    );
-    console.log(mealItems);
     return (
-      <div className='App'>
-        <div className='meals-collection'>
-          {mealItems}
-        </div>
+      <div className="App">
+        <MealLayout menu={this.state.meals}/>
       </div>
     );
   }
