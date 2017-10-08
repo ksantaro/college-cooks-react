@@ -5,19 +5,38 @@ import './BottomRightHomepage.css';
 class BottomRightHomepage extends Component {
   
   render () {
-    return (
-        <div className="BottomRight">
-            <p>Featured</p>
-            <div className="leftimage">
-                <img src="Sample3.jpg" alt="ERROR"></img>
+    if(this.props.selected === false)
+        {
+            return (
+            <div className="BottomRight" onClick={this.props.onClickOutside}>
+                <p>Featured</p>
+                <div className="leftimage">
+                    <img src="Sample3.jpg" alt="ERROR"></img>
+                </div>
+                <div className="rightimage">
+                    <img src="Sample4.jpg" alt="ERROR"></img>
+                </div>
             </div>
-            <div className="rightimage">
-                <img src="Sample4.jpg" alt="ERROR"></img>
+
+
+            ); 
+        }
+      else {
+          return (
+            <div className="BottomRightFade" onClick={this.props.onClickOutside}>
+                <p>Featured</p>
+                <div className="leftimage">
+                    <img src="Sample3.jpg" alt="ERROR"></img>
+                </div>
+                <div className="rightimage">
+                    <img src="Sample4.jpg" alt="ERROR"></img>
+                </div>
             </div>
-        </div>
-      
-        
-    );
+
+
+            ); 
+      }
+
   }
 };
 

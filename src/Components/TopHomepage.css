@@ -9,3 +9,15 @@
     box-shadow: 10px 10px 5px #888888;
     
 }
+
+.TopFade{
+    float: left;
+    position: static;
+    height: 37em;
+    width: 100%;
+    background-image:url(background.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    box-shadow: 10px 10px 5px #888888;
+    opacity: .3;
+}

@@ -21,6 +21,25 @@
     text-shadow: .2px .2px black;
 }
 
+.BottomRightFade {
+    float: right;
+    width: 50%;
+    display: inline-block;
+    font-size: 110%;
+    margin-top: -5px;
+    opacity: .3;
+    
+    
+}
+
+.BottomRightFade p {
+    font-family: LemonMilk;
+    align-content: center;
+    margin-top: 25px;
+    color: red;
+    text-shadow: .2px .2px black;
+}
+
 .leftimage {
     width: 50%;
     float: left;

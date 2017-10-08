@@ -3,18 +3,19 @@ import './ShoppingCartButton.css';
 
 
 class ShoppingCartButton extends Component {
-  constructor (props) {
-    super(props);
-    this.state = {
-      listOfMeals: []
-    };
-  }
-
+  
   render () {
+      if(this.props.selected === false){
+          return (
+            <img onClick={this.props.onClickInside} className="shoppingcart" src="shoppingcart.png" alt="Error"></img>
+        );
+      }
+      else {
+          return (
+            <img onClick={this.props.onClickOutside} className="shoppingcart" src="shoppingcart.png" alt="Error"></img>
+        );
+      }
     
-    return (
-      <img className="shoppingcart" src="shoppingcart.png" alt="Error"></img>
-    );
   }
 };
 

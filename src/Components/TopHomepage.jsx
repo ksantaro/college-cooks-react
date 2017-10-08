@@ -8,15 +8,27 @@ import './TopHomepage.css';
 class TopHomepage extends Component {
   
   render () {
-    return (
-        <div className="Top">
+      if(this.props.selected === false) {
+        return (
+        <div className="Top" onClick={this.props.onClickOutside}>
             <Logo/>
             <SearchBar/>
-            <ShoppingCartButton/>
         </div>
       
         
-    );
+        );
+      }
+      else {
+          return (
+            <div className="TopFade" onClick={this.props.onClickOutside}>
+                  <Logo/>
+                  <SearchBar/>
+              </div>
+      
+        
+        );
+      }
+    
   }
 };
 

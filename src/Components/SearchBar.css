@@ -1,5 +1,5 @@
 .Search div {
-    
+    z-index: 2;
 }
 
 input {
@@ -14,8 +14,7 @@ input {
     background-position: 10px 10px; 
     background-repeat: no-repeat;
     padding: 12px 20px 12px 20px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+   
     
 }
 

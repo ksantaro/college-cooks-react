@@ -20,6 +20,23 @@
     font-family: LemonMilk;
 }
 
+.BottomLeftFade {
+    float: left;
+    width: 50%;
+    display: inline-block;
+    font-size: 110%;
+     margin-top: -5px;
+    opacity: .3;
+}
+
+.BottomLeftFade p {
+    align-content: center;
+    margin-top: 25px;
+    color: red;
+    text-shadow: .2px .2px black;
+    font-family: LemonMilk;
+}
+
 .leftimage {
     width: 50%;
     float: left;

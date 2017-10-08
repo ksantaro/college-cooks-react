@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'LemonMilk';
+    src: url('LemonMilk.otf');
+}
+
+.ShoppingCart {
+    min-height: 100%;
+    position: absolute;
+    width: 20%;
+    min-width: 20%;
+    z-index: 1;
+    margin-left: 80%;
+    background:white;
+    font-family: LemonMilk;
+}
+
+.Text {
+    
+}
