@@ -11,26 +11,32 @@ class MealLayout extends Component {
   }
 
   componentWillMount() {
-    const searchMeals = meals;
+    let searchMeals = [];
     if (this.props.match.params.id) {
-      alert(this.props.match.params.id);
+      meals.forEach((meal) => {
+        if (meal.name.toLocaleLowerCase().includes(this.props.match.params.id.toLocaleLowerCase())) {
+          searchMeals.push(meal);
+        }
+      });
+    } else {
+      searchMeals = meals;
     }
     this.setState({
       meals: searchMeals
     });
   }
 
-  render() {
+  render () {
     let menuItems;
-    if(meals){
-      menuItems = meals.map(menuItem =>
+    if (this.state.meals) {
+      menuItems = this.state.meals.map(menuItem =>
         <MenuItem menuItem={menuItem} />
       );
     }
-    console.log(this.props);
+    const noMeals = (<div style={{fontSize: '48px', margin: "20px"}}>No meals found</div>); // Currently placehold will be made into a component in the future.
     return (
       <div className="menu">
-        {menuItems}
+        {menuItems.length > 0 ? menuItems : noMeals}
       </div>
     );
   }

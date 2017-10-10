@@ -11,7 +11,6 @@ export default class Main extends React.Component {
       <BrowserRouter>
         <Switch>
           <Route exact path='/' component={Homepage} />
-          {/* both /roster and /roster/:number begin with /roster */}
           <Route path='/browse/:id' component={MealLayout} />
           <Route path='/browse/' component={MealLayout} />
         </Switch>
