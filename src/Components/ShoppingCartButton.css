@@ -2,8 +2,8 @@
     position:absolute;
     max-width: 75px;
     max-height: 75px;
-    margin-left: 46%;
-    margin-top: 5px;
+    right: 5px;
+    top: 5px;
     z-index: 2;
 }
 

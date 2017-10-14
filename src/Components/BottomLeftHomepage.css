@@ -4,20 +4,23 @@
 }
 
 .BottomLeft {
+    position: relative;
     float: left;
     width: 50%;
     display: inline-block;
     font-size: 110%;
-     margin-top: -5px;
+    top: 5px;
+    left: 12px;
     
 }
 
 .BottomLeft p {
-    align-content: center;
-    margin-top: 25px;
+    position: relative;
+    text-align: center;
     color: red;
     text-shadow: .2px .2px black;
     font-family: LemonMilk;
+    right: 12px;
 }
 
 .BottomLeftFade {
@@ -25,19 +28,20 @@
     width: 50%;
     display: inline-block;
     font-size: 110%;
-     margin-top: -5px;
+    top: 5px;
     opacity: .3;
 }
 
 .BottomLeftFade p {
-    align-content: center;
-    margin-top: 25px;
+    text-align: center;
+    top: 5px;
     color: red;
     text-shadow: .2px .2px black;
     font-family: LemonMilk;
 }
 
 .leftimage {
+    
     width: 50%;
     float: left;
     transition: .2s ease;

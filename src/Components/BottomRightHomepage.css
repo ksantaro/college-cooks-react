@@ -4,21 +4,25 @@
 }
 
 .BottomRight {
+    position: relative;
     float: right;
     width: 50%;
     display: inline-block;
     font-size: 110%;
-    margin-top: -5px;
+    top: 5px;
+    left: 10px;
     
     
 }
 
 .BottomRight p {
+    position:relative;
     font-family: LemonMilk;
-    align-content: center;
-    margin-top: 25px;
+    text-align: center;
+  
     color: red;
     text-shadow: .2px .2px black;
+    right: 12px;
 }
 
 .BottomRightFade {
@@ -26,7 +30,7 @@
     width: 50%;
     display: inline-block;
     font-size: 110%;
-    margin-top: -5px;
+    top: 5px;
     opacity: .3;
     
     
@@ -34,8 +38,8 @@
 
 .BottomRightFade p {
     font-family: LemonMilk;
-    align-content: center;
-    margin-top: 25px;
+    text-align: center;
+    top: 5px;
     color: red;
     text-shadow: .2px .2px black;
 }
@@ -52,8 +56,8 @@
     transition: .2s ease;
 }
 .leftimage img{
-    height: 280px;
-    width: 450px;
+    width: 95%;
+    min-width: 280px;
     
     
 }
@@ -64,8 +68,8 @@
 
 .rightimage img{
     
-    height: 280px;
-    width: 450px;
+    width: 95%;
+    min-width: 280px;
 }
 
 .rightimage:hover{
