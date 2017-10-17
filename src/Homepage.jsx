@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+import {connect} from 'react-redux';
+import {incrementCounter} from './actions';
+
 import meals from './static-database/meals-database';
 import ingrediants from './static-database/ingrediants-database';
 import Meal from './Components/Meal';
@@ -46,6 +49,7 @@ class App extends Component {
   }
 
   render () {
+    console.log(this.state)
     if(this.state.selected === false)
         {
             return (
@@ -54,6 +58,8 @@ class App extends Component {
                     <TopHomepage selectedMeals={this.state.selectedMeals} onClickOutside={this.onClickOutside} onClickInside={this.onClickInside} selected={this.state.selected}/>
                     <BottomLeftHomepage addNewMeal={this.addNewMealToCart} onClickOutside={this.onClickOutside} selected={this.state.selected} />
                     <BottomRightHomepage addNewMeal={this.addNewMealToCart} onClickOutside={this.onClickOutside} selected={this.state.selected}/>
+                    <div>HERE IS THE NUMBER: {this.props.counter}</div>
+                    <button onClick={this.props.incrementCounter}>Increment</button>
                 </div> 
             );
         }
@@ -74,4 +80,12 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => ({
+  counter: state.counter,
+});
+
+const mapDispatchToProps = dispatch => ({
+  incrementCounter: () => dispatch(incrementCounter()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

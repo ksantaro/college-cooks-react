@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import MenuItem from './Components/MenuItem';
 import meals from './static-database/meals-database.js';
+import {connect} from 'react-redux';
+import {incrementCounter} from './actions';
 
 class MealLayout extends Component {
   constructor(props) {
@@ -37,9 +39,19 @@ class MealLayout extends Component {
     return (
       <div className="menu">
         {menuItems.length > 0 ? menuItems : noMeals}
+        <div>HERE IS THE NUMBER: {this.props.counter}</div>
+        <button onClick={this.props.incrementCounter}>Increment</button>
       </div>
     );
   }
 }
 
-export default MealLayout;
+const mapStateToProps = state => ({
+  counter: state.counter,
+});
+
+const mapDispatchToProps = dispatch => ({
+  incrementCounter: () => dispatch(incrementCounter()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(MealLayout);
