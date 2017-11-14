@@ -7,7 +7,6 @@ import meals from './static-database/meals-database';
 import ingrediants from './static-database/ingrediants-database';
 import Meal from './Components/Meal';
 import TopHomepage from './Components/TopHomepage'
-import Logo from './Components/Logo'
 import BottomLeftHomepage from './Components/BottomLeftHomepage'
 import BottomRightHomepage from './Components/BottomRightHomepage'
 import ShoppingCartButton from './Components/ShoppingCartButton'
