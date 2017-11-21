@@ -3,3 +3,13 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.one-third {
+  width: 33.3%;
+  display: inline-block;
+}
+
+.two-third {
+  width: 66.7%;
+  display: inline-block;
+}

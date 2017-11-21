@@ -1,0 +1,35 @@
+.topbar-container {
+  border-bottom: 3px solid red;
+  height: 50px;  
+}
+
+.topbar-container-title {
+  font-size: 35px;
+  color: red;
+  margin-left: 10px;
+}
+
+.topbar-container input {
+  top: 7px;
+  right: 0;
+  border-radius: 0;
+  border-color: red;
+  height: 15px;
+}
+
+.topbar-dropdown {
+  width: 175px;
+  display: inline-block;
+}
+
+.Select-control {
+  overflow: auto;
+}
+
+.Select-menu-outer {
+  max-height: 300px;
+}
+  
+  .Select-menu {
+  max-height: 148px;
+}

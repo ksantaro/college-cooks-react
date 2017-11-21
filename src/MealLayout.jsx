@@ -3,6 +3,7 @@ import MenuItem from './Components/MenuItem';
 import meals from './static-database/meals-database.js';
 import {connect} from 'react-redux';
 import {incrementCounter} from './actions';
+import TopBar from './Components/TopBar/TopBar';
 
 class MealLayout extends Component {
   constructor(props) {
@@ -28,6 +29,8 @@ class MealLayout extends Component {
     });
   }
 
+  
+
   render () {
     let menuItems;
     if (this.state.meals) {
@@ -37,10 +40,13 @@ class MealLayout extends Component {
     }
     const noMeals = (<div style={{fontSize: '48px', margin: "20px"}}>No meals found</div>); // Currently placehold will be made into a component in the future.
     return (
-      <div className="menu">
-        {menuItems.length > 0 ? menuItems : noMeals}
-        <div>HERE IS THE NUMBER: {this.props.counter}</div>
-        <button onClick={this.props.incrementCounter}>Increment</button>
+      <div className="meal-layout">
+        <TopBar />
+        <div className="menu">
+          {menuItems.length > 0 ? menuItems : noMeals}
+          <div>HERE IS THE NUMBER: {this.props.counter}</div>
+          <button onClick={this.props.incrementCounter}>Increment</button>
+        </div>
       </div>
     );
   }

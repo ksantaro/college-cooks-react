@@ -13,17 +13,17 @@
 .modal {
   position: relative;
   background-color: white;
-  width: 1000px;
+  width: 600px;
   margin-right: auto;
   margin-left: auto;
-  height: 800px;
+  height: 600px;
   border-radius: 15px;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .meal-information {
-
+  
 }
 
 .meal-modal-header {

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Router, Route, Link, browserHistory, IndexRoute  } from 'react-router';
 import Homepage from './Homepage';
 import MealLayout from './MealLayout';
+import Checkout from './Checkout';
 import { BrowserRouter, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 //import { createLogger } from 'redux-logger';
@@ -50,6 +51,7 @@ export default class App extends React.Component {
             <Route exact path='/' component={Homepage} />
             <Route path='/browse/:id' component={MealLayout} />
             <Route path='/browse/' component={MealLayout} />
+            <Route path='/checkout/' component={Checkout} />
           </Switch>
         </BrowserRouter>
       </Provider>

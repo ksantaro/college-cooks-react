@@ -6,16 +6,6 @@ import './MenuItem.css';
 class MenuItem extends Component {
   constructor (props) {
     super(props);
-    this.state = {
-      modalOpen: false
-    };
-    this.toggleModal = this.toggleModal.bind(this);
-  }
-
-  toggleModal () {
-    this.setState({
-      modalOpen: !this.state.modalOpen
-    });
   }
 
   render() {
@@ -23,11 +13,10 @@ class MenuItem extends Component {
     console.log(this.props);
     return (
       <div className="menu-item">
-        {this.state.modalOpen ? <MealModal menuItem={this.props.menuItem} toggleModal={this.toggleModal} /> : null}
-        <div className="image-holder" onClick={this.toggleModal}>
+        <div className="image-holder">
           <img className ='image' src="https://static.pexels.com/photos/7782/food-plate-wood-restaurant.jpg"/>
         </div>
-        <div className="image-info" onClick={this.toggleModal}>
+        <div className="image-info">
           <h3>{this.props.menuItem.name}</h3>
           <div className="menu-detail">
             <span className="menu-price">{this.props.menuItem.price}</span>
